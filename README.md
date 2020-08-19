@@ -4,7 +4,7 @@
 
 <!-- ![dinotakesatrip00](https://user-images.githubusercontent.com/3405072/90633152-73072b00-e21d-11ea-8ed1-858b98516502.gif) -->
 
-_click image to view full video_
+_click image to view full-res video_
 <br>
 
 ---
