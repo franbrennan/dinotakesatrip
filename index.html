@@ -1,22 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<title="Dino Takes A Trip"></title>
+    <head>
+        <title>Dino Takes A Trip - Some AR Fun</title>
 
-<style>
-.center {
-  margin: auto;
-  width: 50%;
-  text-align: center;
-  padding: 10px;
-}
-</style>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+    </head>
 
-<body>
+    <body style="margin: 0; overflow: hidden;">
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: true;"
+            renderer="logarithmicDepthBuffer: true;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
+            shadow="type: pcfsoft">
 
-<div class="center">
-<h1>Nearly there!</h1>
-</div>
+            <a-assets>
+                <a-asset-item
+                    id="animated-asset"
+                    src="assets/asset.glb">
+                </a-asset-item>
+            </a-assets>
 
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA">
 
-</body>
+                <a-entity
+                  id="arjsstudio_dino"
+                  scale="0.09 0.09 0.09"
+                  position="0.5 1 0.1"
+                  rotation="0 -90 0"
+                  shadow="cast: true; receive: true"
+                  animation-mixer="loop: repeat"
+                  gltf-model="#animated-asset"
+                  class="clickable"
+                  gesture-handler>
+                </a-entity>
+
+                <!-- Added entity 01 | Land -->
+                <a-entity
+                  id="land"
+                  geometry="primitive: cylinder; radius: 0.8; height: 0.01;"
+                  material="color: #004d00; opacity: 1;"
+                  shadow="receive: true"
+                  position="0 0 0"
+                  rotation="0 0 0">
+                </a-entity>
+
+                <!-- Custom light 01 | Ambient -->
+                <a-entity
+                  light="type: ambient;
+                  intensity: 0.5;">
+                </a-entity>
+
+                <!-- Custom light 02 | Directional -->
+                <a-entity
+                  light="type: point;
+                  intensity: 2;"
+                  position="0 1 1">
+                </a-entity>
+
+                <!-- Custom light 03 | Point -->
+                <a-entity
+                  light="type: point;
+                  intensity: 0.5;
+                  castShadow: true;
+                  shadowMapHeight: 1200;
+                  shadowMapWidth: 1200;"
+                  position="0 6 1.5">
+                </a-entity>
+
+                <!-- Custom light 04 | Point -->
+                <a-entity
+                  light="type: point;
+                  intensity: 0.5;"
+                  position="-1 6 -1.5">
+                </a-entity>
+
+            </a-marker>
+
+            <a-entity camera></a-entity>
+
+          </a-scene>
+      </body>
 </html>
