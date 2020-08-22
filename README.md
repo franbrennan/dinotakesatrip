@@ -51,4 +51,6 @@ I created the 3D model using <a href="https://www.blender.org/download" target="
 
 Feel free to play around with absolutely anything that I've created here... and if you have any questions about any of it, just give me a shout and I’ll do my best to help 🙂
 
-Twitter: <a href="https://twitter.com/FrannieBrennan" target="">**@FrannieBrennan**</a>
+Twitter: <a href="https://twitter.com/FrannieBrennan" target="">**@FrannieBrennan**</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/franniebrennan" target="">**FrannieBrennan**</a>  
+
