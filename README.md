@@ -36,7 +36,7 @@ Also note, `shadow="cast: true; receive: true"` has been added to the model enti
 ---
 
 ## Dino Plane
-I created the 3D model using <a href="https://www.blender.org/download" target="">**Blender 2.83.4**</a>. Please don’t scrutinise my modelling too closely, I only made it for a bit of fun 🙂
+I created the 3D model using <a href="https://www.blender.org/download" target="">**Blender 2.8**</a>. Please don’t scrutinise my modelling too closely, I only made it for a bit of fun 🙂
 <br><br>
 
 ---
