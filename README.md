@@ -48,7 +48,7 @@ I created the 3D model using <a href="https://www.blender.org/download" target="
 
 If you were interested in seeing **Dino Takes A Trip** you may also like to check out<br><br>
 <a href="https://github.com/franbrennan/thisiswaytoomuchfun" target="">**This AR Lark Is Way Too Much Fun**</a><br>
-<a href="https://github.com/franbrennan/coffeetime" target="">**Dino Takes A Trip**</a> 
+<a href="https://github.com/franbrennan/coffeetime" target="">**Coffee Time**</a> 
 
 
 ---
