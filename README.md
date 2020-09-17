@@ -17,7 +17,7 @@ A marker-based WebAR test created using <a href="https://github.com/AR-js-org/st
 <br><br>
 - <a href="https://franbrennan.github.io/dinotakesatrip" target="">**Live Demo 🦖✈️**</a>
 
-- Live demo marker image (print out, then scan the QR code... or use the link above... and point your device camera at the marker image) 
+- Live demo marker image (print out and point your device camera at the marker image) 
 
 ![marker](https://user-images.githubusercontent.com/3405072/90634221-45bb7c80-e21f-11ea-9613-3b60af0fbed1.png)
 
